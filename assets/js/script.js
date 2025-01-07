@@ -1,4 +1,3 @@
-'use strict';
 
 /**
  * element toggle function
@@ -49,3 +48,63 @@ window.addEventListener("scroll", function () {
   window.scrollY >= 400 ? header.classList.add("active")
     : header.classList.remove("active");
 }); 
+
+
+// Gallery Filtering and Lightbox
+document.addEventListener('DOMContentLoaded', function() {
+  const filterItems = document.querySelectorAll('.filter-item');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  const lightbox = document.querySelector('.lightbox');
+  const lightboxImg = document.querySelector('.lightbox-img');
+  const closeLightbox = document.querySelector('.close-lightbox');
+
+  // Filter Gallery Items
+  filterItems.forEach(item => {
+      item.addEventListener('click', function() {
+          // Update active filter
+          filterItems.forEach(item => item.classList.remove('active'));
+          this.classList.add('active');
+
+          // Filter gallery
+          const filterValue = this.getAttribute('data-filter');
+          
+          galleryItems.forEach(item => {
+              if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                  item.style.display = 'block';
+                  setTimeout(() => item.style.opacity = '1', 50);
+              } else {
+                  item.style.opacity = '0';
+                  setTimeout(() => item.style.display = 'none', 300);
+              }
+          });
+      });
+  });
+
+  // Lightbox Functionality
+  galleryItems.forEach(item => {
+      item.addEventListener('click', function() {
+          const imgSrc = this.querySelector('img').src;
+          lightboxImg.src = imgSrc;
+          lightbox.classList.add('show');
+      });
+  });
+
+  // Close Lightbox
+  closeLightbox.addEventListener('click', () => {
+      lightbox.classList.remove('show');
+  });
+
+  // Close Lightbox on Outside Click
+  lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+          lightbox.classList.remove('show');
+      }
+  });
+
+  // Add Animation to Gallery Items
+  galleryItems.forEach((item, index) => {
+      item.style.animationDelay = `${index * 0.1}s`;
+  });
+});
+
+

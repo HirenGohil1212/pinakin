@@ -43,18 +43,18 @@
         <ul class="header-top-list">
 
           <li>
-            <a href="mailto:info@homeverse.com" class="header-top-link">
-              <ion-icon name="mail-outline"></ion-icon>
+            <a href="tel:+1234567890" class="header-top-link">
+              <ion-icon name="call-outline"></ion-icon>
 
-              <span>info@homeverse.com</span>
+              <span>+123 456 7890</span>
             </a>
           </li>
 
           <li>
-            <a href="#" class="header-top-link">
+            <a href="https://maps.google.com" target="_blank" class="header-top-link">
               <ion-icon name="location-outline"></ion-icon>
 
-              <address>15/A, Nest Tower, NYC</address>
+              <address>Lake City, Udaipur, Rajasthan</address>
             </a>
           </li>
 
@@ -65,13 +65,7 @@
 
             <li>
               <a href="#" class="header-top-social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="header-top-social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-whatsapp"></ion-icon>
               </a>
             </li>
 
@@ -81,15 +75,9 @@
               </a>
             </li>
 
-            <li>
-              <a href="#" class="header-top-social-link">
-                <ion-icon name="logo-pinterest"></ion-icon>
-              </a>
-            </li>
-
           </ul>
 
-          <button class="header-top-btn">Add Listing</button>
+          <button class="header-top-btn">Book Now</button>
         </div>
 
       </div>
@@ -98,16 +86,23 @@
     <div class="header-bottom">
       <div class="container">
 
-        <a href="#" class="logo">
-          <img src="./assets/images/logo.png" alt="Homeverse logo">
-        </a>
+        <!-- <a href="#" class="logo">
+          <img src="./assets/images/logo.png" alt="Villa Logo">
+        </a> -->
+
+        <!-- Replace the image logo with text logo -->
+<a href="#" class="logo">
+  <span class="logo-text">Pinakin</span>
+  <span class="logo-subtext">Prayaan</span>
+</a>
 
         <nav class="navbar" data-navbar>
 
           <div class="navbar-top">
 
             <a href="#" class="logo">
-              <img src="./assets/images/logo.png" alt="Homeverse logo">
+              <span class="logo-text">Pinakin</span>
+              <span class="logo-subtext">Prayaan</span>
             </a>
 
             <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
@@ -128,15 +123,15 @@
               </li>
 
               <li>
-                <a href="#service" class="navbar-link" data-nav-link>Service</a>
+                <a href="#occasions" class="navbar-link" data-nav-link>Occasions</a>
               </li>
 
               <li>
-                <a href="#property" class="navbar-link" data-nav-link>Property</a>
+                <a href="#amenities" class="navbar-link" data-nav-link>Amenities</a>
               </li>
 
               <li>
-                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+                <a href="#gallery" class="navbar-link" data-nav-link>Gallery</a>
               </li>
 
               <li>
@@ -152,26 +147,18 @@
 
           <button class="header-bottom-actions-btn" aria-label="Search">
             <ion-icon name="search-outline"></ion-icon>
-
-            <span>Search</span>
           </button>
 
           <button class="header-bottom-actions-btn" aria-label="Profile">
             <ion-icon name="person-outline"></ion-icon>
-
-            <span>Profile</span>
           </button>
 
-          <button class="header-bottom-actions-btn" aria-label="Cart">
-            <ion-icon name="cart-outline"></ion-icon>
-
-            <span>Cart</span>
+          <button class="header-bottom-actions-btn" aria-label="Book Now">
+            <ion-icon name="calendar-outline"></ion-icon>
           </button>
 
           <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
             <ion-icon name="menu-outline"></ion-icon>
-
-            <span>Menu</span>
           </button>
 
         </div>
@@ -193,30 +180,28 @@
       -->
 
       <section class="hero" id="home">
+        <!-- Add video background -->
+        <video class="hero-video-bg" autoplay muted loop playsinline>
+          <source src="./assets/images/Drone Video.mp4" type="video/mp4">
+          <!-- Add fallback image if video doesn't load -->
+          Your browser does not support the video tag.
+        </video>
+      
         <div class="container">
-
           <div class="hero-content">
-
             <p class="hero-subtitle">
               <ion-icon name="home"></ion-icon>
-
-              <span>Real Estate Agency</span>
+              <span>Luxury Villa</span>
             </p>
-
-            <h2 class="h1 hero-title">Find Your Dream House By Us</h2>
-
-            <p class="hero-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-            </p>
-
-            <button class="btn">Make An Enquiry</button>
-
+      
+            <h1 class="h1 hero-title">Experience Royal Living in Udaipur's Finest Villa</h1>
+      
+            <!-- <p class="hero-text">
+              Nestled in the heart of the City of Lakes, our magnificent villa combines traditional Rajasthani architecture with modern luxury, offering breathtaking views of Lake Pichola and the Aravalli Hills.
+            </p> -->
+      
+            <button class="btn">Schedule a Private Tour</button>
           </div>
-
-          <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.png" alt="Modern house model" class="w-100">
-          </figure>
-
         </div>
       </section>
 
@@ -230,70 +215,55 @@
 
       <section class="about" id="about">
         <div class="container">
+          <p class="section-subtitle">About Our Villa</p>
+          <h2 class="h2 section-title">Experience Luxury Living</h2>
 
-          <figure class="about-banner">
-            <img src="./assets/images/about-banner-1.png" alt="House interior">
-
-            <img src="./assets/images/about-banner-2.jpg" alt="House interior" class="abs-img">
-          </figure>
-
-          <div class="about-content">
-
-            <p class="section-subtitle">About Us</p>
-
-            <h2 class="h2 section-title">The Leading Real Estate Rental Marketplace.</h2>
-
-            <p class="about-text">
-              Over 39,000 people work for us in more than 70 countries all over the This breadth of global coverage,
-              combined with
-              specialist services
-            </p>
-
-            <ul class="about-list">
-
-              <li class="about-item">
-                <div class="about-item-icon">
-                  <ion-icon name="home-outline"></ion-icon>
-                </div>
-
-                <p class="about-item-text">Smart Home Design</p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-item-icon">
-                  <ion-icon name="leaf-outline"></ion-icon>
-                </div>
-
-                <p class="about-item-text">Beautiful Scene Around</p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-item-icon">
-                  <ion-icon name="wine-outline"></ion-icon>
-                </div>
-
-                <p class="about-item-text">Exceptional Lifestyle</p>
-              </li>
-
-              <li class="about-item">
-                <div class="about-item-icon">
-                  <ion-icon name="shield-checkmark-outline"></ion-icon>
-                </div>
-
-                <p class="about-item-text">Complete 24/7 Security</p>
-              </li>
-
-            </ul>
-
-            <p class="callout">
-              "Enimad minim veniam quis nostrud exercitation
-              llamco laboris. Lorem ipsum dolor sit amet"
-            </p>
-
-            <a href="#service" class="btn">Our Services</a>
-
+          <!-- Image Collage -->
+          <div class="image-collage">
+            <div class="collage-left">
+              <img src="./assets/images/_DSC9809.jpg" alt="Villa Front View" class="main-img">
+            </div>
+            <div class="collage-right">
+              <img src="./assets/images/_DSC9640.jpg" alt="Swimming Pool" class="top-img">
+              <img src="./assets/images/_DSC9807.jpg" alt="Living Room" class="middle-img">
+              <img src="./assets/images/DJI_0002.jpg" alt="Garden View" class="bottom-img">
+            </div>
           </div>
 
+          <!-- Villa Features -->
+          <div class="villa-features">
+            <div class="feature-card">
+              <div class="card-icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </div>
+              <h3>Spacious Villa</h3>
+              <p>5000 sq.ft of luxury living space with modern amenities and traditional architecture</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="card-icon">
+                <ion-icon name="bed-outline"></ion-icon>
+              </div>
+              <h3>Comfortable Stay</h3>
+              <p>4 luxurious bedrooms with en-suite bathrooms, accommodating up to 12 guests</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="card-icon">
+                <ion-icon name="water-outline"></ion-icon>
+              </div>
+              <h3>Private Pool</h3>
+              <p>Temperature-controlled infinity pool with stunning lake and mountain views</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="card-icon">
+                <ion-icon name="leaf-outline"></ion-icon>
+              </div>
+              <h3>Scenic Location</h3>
+              <p>Nestled in a serene setting with panoramic views of Lake Pichola</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -305,92 +275,125 @@
         - #SERVICE
       -->
 
-      <section class="service" id="service">
+      <section class="occasions" id="occasions">
         <div class="container">
-
-          <p class="section-subtitle">Our Services</p>
-
-          <h2 class="h2 section-title">Our Main Focus</h2>
-
-          <ul class="service-list">
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-1.png" alt="Service icon">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <a href="#">Buy a home</a>
-                </h3>
-
-                <p class="card-text">
-                  over 1 million+ homes for sale available on the website, we can match you with a house you will want
-                  to call home.
-                </p>
-
-                <a href="#" class="card-link">
-                  <span>Find A Home</span>
-
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-
+          <p class="section-subtitle">Perfect For Every Occasion</p>
+          <h2 class="h2 section-title">Celebrate With Us</h2>
+      
+          <div class="occasion-cards">
+            <!-- Wedding Card -->
+            <div class="occasion-card">
+              <div class="card-banner">
+                <img src="./assets/images/wed_1.jpeg" alt="Wedding Celebration">
+                <span class="card-badge">Most Popular</span>
               </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-2.png" alt="Service icon">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <a href="#">Rent a home</a>
-                </h3>
-
-                <p class="card-text">
-                  over 1 million+ homes for sale available on the website, we can match you with a house you will want
-                  to call home.
+              <div class="card-content">
+                <h3 class="h3">Destination Weddings</h3>
+                <p>
+                  Create magical moments with an intimate wedding celebration. Perfect for ceremonies 
+                  up to 100 guests with stunning lake views.
                 </p>
-
-                <a href="#" class="card-link">
-                  <span>Find A Home</span>
-
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-
+                <ul class="card-list">
+                  <li>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <span>Dedicated Event Planner</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <span>Customized Decor</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <span>Catering Services</span>
+                  </li>
+                </ul>
               </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/service-3.png" alt="Service icon">
-                </div>
-
-                <h3 class="h3 card-title">
-                  <a href="#">Sell a home</a>
-                </h3>
-
-                <p class="card-text">
-                  over 1 million+ homes for sale available on the website, we can match you with a house you will want
-                  to call home.
+            </div>
+      
+            <!-- Birthday Card -->
+            <div class="occasion-card">
+              <div class="card-banner">
+                <img src="./assets/images/birthday.jpeg" alt="Birthday Party">
+              </div>
+              <div class="card-content">
+                <h3 class="h3">Birthday Celebrations</h3>
+                <p>
+                  Make your special day memorable with a luxurious birthday celebration 
+                  in our spacious party area.
                 </p>
-
-                <a href="#" class="card-link">
-                  <span>Find A Home</span>
-
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-
+                <ul class="card-list">
+                  <li>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <span>Pool Party Setup</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <span>Entertainment System</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <span>BBQ Equipment</span>
+                  </li>
+                </ul>
               </div>
-            </li>
-
-          </ul>
-
+            </div>
+      
+            <!-- Corporate Card -->
+            <div class="occasion-card">
+              <div class="card-banner">
+                <img src="./assets/images/corporate.jpeg" alt="Corporate Event">
+              </div>
+              <div class="card-content">
+                <h3 class="h3">Corporate Retreats</h3>
+                <p>
+                  Host productive team meetings and retreats in a serene environment 
+                  with all necessary amenities.
+                </p>
+                <ul class="card-list">
+                  <li>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <span>Conference Setup</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <span>High-speed WiFi</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <span>Team Activities</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Family Get-together Card -->
+            <div class="occasion-card">
+              <div class="card-banner">
+                <img src="./assets/images/family.jpeg" alt="Family Gathering">
+              </div>
+              <div class="card-content">
+                <h3 class="h3">Family Gatherings</h3>
+                <p>
+                  Create lasting memories with your loved ones in our spacious villa 
+                  perfect for family reunions.
+                </p>
+                <ul class="card-list">
+                  <li>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <span>Family Activities</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <span>Kids Play Area</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <span>Garden Space</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -402,7 +405,7 @@
         - #PROPERTY
       -->
 
-      <section class="property" id="property">
+      <!-- <section class="property" id="property">
         <div class="container">
 
           <p class="section-subtitle">Properties</p>
@@ -686,9 +689,9 @@
 
                   <div class="card-price">
                     <strong>$34,900</strong>/Month
-                  </div>
+                  </div>About Our Villa
 
-                  <h3 class="h3 card-title">
+
                     <a href="#">Comfortable Apartment</a>
                   </h3>
 
@@ -886,17 +889,17 @@
           </ul>
 
         </div>
-      </section>
+      </section> -->
 
 
 
 
 
-      <!-- 
+      <!--  
         - #FEATURES
       -->
 
-      <section class="features">
+      <!-- <section class="features">
         <div class="container">
 
           <p class="section-subtitle">Our Aminities</p>
@@ -1036,8 +1039,160 @@
           </ul>
 
         </div>
-      </section>
+      </section> -->
+      <!-- <section class="features">
+        <div class="container">
+          <p class="section-subtitle">Villa Amenities</p>
+          <h2 class="h2 section-title">Luxury Living Features</h2>
+      
+          <ul class="features-list">
+            <li>
+              <a href="#" class="features-card">
+                <div class="card-icon">
+                  <ion-icon name="water-outline"></ion-icon>
+                </div>
+                <h3 class="card-title">Infinity Pool</h3>
+                <div class="card-text">Private infinity pool overlooking Lake Pichola</div>
+              </a>
+            </li>
+      
+            <li>
+              <a href="#" class="features-card">
+                <div class="card-icon">
+                  <ion-icon name="restaurant-outline"></ion-icon>
+                </div>
+                <h3 class="card-title">Gourmet Kitchen</h3>
+                <div class="card-text">State-of-the-art kitchen with personal chef</div>
+              </a>
+            </li>
+      
+            <li>
+              <a href="#" class="features-card">
+                <div class="card-icon">
+                  <ion-icon name="fitness-outline"></ion-icon>
+                </div>
+                <h3 class="card-title">Wellness Center</h3>
+                <div class="card-text">Private gym and yoga pavilion</div>
+              </a>
+            </li>
+      
+            <!-- Add more amenities -->
+          <!-- </ul>
+        </div>
+      </section> -->
 
+      <section class="amenities" id="amenities">
+        <div class="container">
+          <p class="section-subtitle">Our Facilities</p>
+          <h2 class="h2 section-title">Luxury Amenities</h2>
+      
+          <div class="amenities-grid">
+            <!-- Outdoor -->
+            <div class="amenity-category">
+              <h3 class="category-title">
+                <ion-icon name="sunny-outline"></ion-icon>
+                Outdoor
+              </h3>
+              <div class="amenity-list">
+                <div class="amenity-item">
+                  <ion-icon name="water-outline"></ion-icon>
+                  <span>Private Pool</span>
+                </div>
+                <div class="amenity-item">
+                  <ion-icon name="leaf-outline"></ion-icon>
+                  <span>Garden Area</span>
+                </div>
+                <div class="amenity-item">
+                  <ion-icon name="bonfire-outline"></ion-icon>
+                  <span>BBQ Area</span>
+                </div>
+                <div class="amenity-item">
+                  <ion-icon name="car-outline"></ion-icon>
+                  <span>Private Parking</span>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Indoor -->
+            <div class="amenity-category">
+              <h3 class="category-title">
+                <ion-icon name="home-outline"></ion-icon>
+                Indoor
+              </h3>
+              <div class="amenity-list">
+                <div class="amenity-item">
+                  <ion-icon name="wifi-outline"></ion-icon>
+                  <span>High-Speed WiFi</span>
+                </div>
+                <div class="amenity-item">
+                  <ion-icon name="tv-outline"></ion-icon>
+                  <span>Smart TVs</span>
+                </div>
+                <div class="amenity-item">
+                  <ion-icon name="snow-outline"></ion-icon>
+                  <span>Air Conditioning</span>
+                </div>
+                <div class="amenity-item">
+                  <ion-icon name="game-controller-outline"></ion-icon>
+                  <span>Game Room</span>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Kitchen -->
+            <div class="amenity-category">
+              <h3 class="category-title">
+                <ion-icon name="restaurant-outline"></ion-icon>
+                Kitchen
+              </h3>
+              <div class="amenity-list">
+                <div class="amenity-item">
+                  <ion-icon name="cafe-outline"></ion-icon>
+                  <span>Modern Appliances</span>
+                </div>
+                <div class="amenity-item">
+                  <ion-icon name="wine-outline"></ion-icon>
+                  <span>Wine Cooler</span>
+                </div>
+                <div class="amenity-item">
+                  <ion-icon name="ice-cream-outline"></ion-icon>
+                  <span>Refrigerator</span>
+                </div>
+                <div class="amenity-item">
+                  <ion-icon name="water-outline"></ion-icon>
+                  <span>Water Purifier</span>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Services -->
+            <div class="amenity-category">
+              <h3 class="category-title">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+                Services
+              </h3>
+              <div class="amenity-list">
+                <div class="amenity-item">
+                  <ion-icon name="shield-outline"></ion-icon>
+                  <span>24/7 Security</span>
+                </div>
+                <div class="amenity-item">
+                  <ion-icon name="person-outline"></ion-icon>
+                  <span>Housekeeping</span>
+                </div>
+                <div class="amenity-item">
+                  <ion-icon name="medkit-outline"></ion-icon>
+                  <span>First Aid</span>
+                </div>
+                <div class="amenity-item">
+                  <ion-icon name="car-sport-outline"></ion-icon>
+                  <span>Airport Pickup</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
 
@@ -1046,7 +1201,7 @@
         - #BLOG
       -->
 
-      <section class="blog" id="blog">
+      <!-- <section class="blog" id="blog">
         <div class="container">
 
           <p class="section-subtitle">News & Blogs</p>
@@ -1215,8 +1370,189 @@
           </ul>
 
         </div>
+      </section> -->
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <p class="section-subtitle">Photo Gallery</p>
+          <h2 class="h2 section-title">Explore Our Villa</h2>
+      
+          <div class="gallery-wrapper">
+            <!-- Gallery Filter -->
+            <ul class="gallery-filter">
+              <li class="filter-item active" data-filter="all">All</li>
+              <li class="filter-item" data-filter="interior">Interior</li>
+              <li class="filter-item" data-filter="outdoor">Outdoor</li>
+              <li class="filter-item" data-filter="amenities">Amenities</li>
+            </ul>
+      
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+              <!-- Interior Images -->
+              <div class="gallery-item interior" data-category="interior">
+                <img src="./assets/images/Int/_DSC9640.jpg" alt="Luxury Living Room">
+                <div class="item-overlay">
+                  <span class="category">Interior</span>
+                  <h3>Living Room</h3>
+                  <ion-icon name="expand-outline" class="expand-btn"></ion-icon>
+                </div>
+              </div>
+      
+              <div class="gallery-item interior" data-category="interior">
+                <img src="./assets/images/Int/_DSC9648.jpg" alt="Master Bedroom">
+                <div class="item-overlay">
+                  <span class="category">Interior</span>
+                  <h3>Master Bedroom</h3>
+                  <ion-icon name="expand-outline" class="expand-btn"></ion-icon>
+                </div>
+              </div>
+      
+              <!-- Outdoor Images -->
+              <div class="gallery-item outdoor" data-category="outdoor">
+                <img src="./assets/images/Ext/_DSC9783.jpg" alt="Swimming Pool">
+                <div class="item-overlay">
+                  <span class="category">Outdoor</span>
+                  <h3>Infinity Pool</h3>
+                  <ion-icon name="expand-outline" class="expand-btn"></ion-icon>
+                </div>
+              </div>
+      
+              <div class="gallery-item outdoor" data-category="outdoor">
+                <img src="./assets/images/Ext/DJI_0005.jpg" alt="Garden Area">
+                <div class="item-overlay">
+                  <span class="category">Outdoor</span>
+                  <h3>Garden View</h3>
+                  <ion-icon name="expand-outline" class="expand-btn"></ion-icon>
+                </div>
+              </div>
+      
+              <!-- Amenities Images -->
+              <div class="gallery-item amenities" data-category="amenities">
+                <img src="./assets/images/Ext/_DSC9760.jpg" alt="Fitness Center">
+                <div class="item-overlay">
+                  <span class="category">Amenities</span>
+                  <h3>Fitness Center</h3>
+                  <ion-icon name="expand-outline" class="expand-btn"></ion-icon>
+                </div>
+              </div>
+      
+              <div class="gallery-item amenities" data-category="amenities">
+                <img src="./assets/images/Ext/_DSC9796.jpg" alt="Spa Area">
+                <div class="item-overlay">
+                  <span class="category">Amenities</span>
+                  <h3>Spa & Wellness</h3>
+                  <ion-icon name="expand-outline" class="expand-btn"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Lightbox -->
+        <div class="lightbox">
+          <div class="lightbox-content">
+            <img src="" alt="Gallery Image" class="lightbox-img">
+            <ion-icon name="close-outline" class="close-lightbox"></ion-icon>
+          </div>
+        </div>
       </section>
 
+
+      <!-- 
+      BOOKING
+      -->
+
+      <section class="booking" id="booking">
+        <div class="container">
+          <p class="section-subtitle">Our Rooms</p>
+          <h2 class="h2 section-title">Luxury Accommodations</h2>
+      
+          <div class="room-cards">
+            <!-- Master Suite -->
+            <div class="room-card">
+              <div class="card-banner">
+                <img src="./assets/images/Int/_DSC9683.jpg" alt="Master Suite">
+                <span class="badge">Popular Choice</span>
+              </div>
+      
+              <div class="card-content">
+                <div class="card-header">
+                  <h3 class="room-title">Master Suite</h3>
+                  <div class="rate">
+                    <p class="price">₹15,000</p>
+                    <span class="per-night">per night</span>
+                  </div>
+                </div>
+      
+                <div class="room-features">
+                  <div class="feature">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <span>2 Adults</span>
+                  </div>
+                  <div class="feature">
+                    <ion-icon name="expand-outline"></ion-icon>
+                    <span>45 m²</span>
+                  </div>
+                  <div class="feature">
+                    <ion-icon name="bed-outline"></ion-icon>
+                    <span>King Bed</span>
+                  </div>
+                </div>
+      
+                <div class="room-desc">
+                  <p>Luxurious suite with lake view, private balcony, and premium amenities.</p>
+                </div>
+      
+                <a href="tel:+1234567890" class="btn contact-btn">
+                  <ion-icon name="call-outline"></ion-icon>
+                  Contact to Book
+                </a>
+              </div>
+            </div>
+      
+            <!-- Family Room -->
+            <div class="room-card">
+              <div class="card-banner">
+                <img src="./assets/images/Int/_DSC9644.jpg" alt="Family Room">
+              </div>
+      
+              <div class="card-content">
+                <div class="card-header">
+                  <h3 class="room-title">Family Room</h3>
+                  <div class="rate">
+                    <p class="price">₹20,000</p>
+                    <span class="per-night">per night</span>
+                  </div>
+                </div>
+      
+                <div class="room-features">
+                  <div class="feature">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <span>4 Adults</span>
+                  </div>
+                  <div class="feature">
+                    <ion-icon name="expand-outline"></ion-icon>
+                    <span>65 m²</span>
+                  </div>
+                  <div class="feature">
+                    <ion-icon name="bed-outline"></ion-icon>
+                    <span>2 King Beds</span>
+                  </div>
+                </div>
+      
+                <div class="room-desc">
+                  <p>Spacious room perfect for families, with connecting areas and garden view.</p>
+                </div>
+      
+                <a href="https://wa.me/1234567890" class="btn contact-btn whatsapp">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                  Book on WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
 
@@ -1225,7 +1561,7 @@
         - #CTA
       -->
 
-      <section class="cta">
+      <!-- <section class="cta">
         <div class="container">
 
           <div class="cta-card">
@@ -1243,6 +1579,72 @@
           </div>
 
         </div>
+      </section> -->
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <p class="section-subtitle">Get In Touch</p>
+          <h2 class="h2 section-title">Contact Us</h2>
+      
+          <div class="contact-wrapper">
+            <!-- Map Section -->
+            <div class="map-box">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_CODE"
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+              </iframe>
+            </div>
+      
+            <!-- Contact Info -->
+            <div class="contact-info">
+              <div class="info-card">
+                <ion-icon name="location-outline"></ion-icon>
+                <div>
+                  <h3>Our Location</h3>
+                  <p>Lake City, Udaipur, Rajasthan</p>
+                  <a href="https://goo.gl/maps/YOUR_LOCATION" target="_blank" class="direction-link">
+                    Get Directions
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+      
+              <div class="info-card">
+                <ion-icon name="call-outline"></ion-icon>
+                <div>
+                  <h3>Phone Number</h3>
+                  <a href="tel:+1234567890" class="contact-link">+123 456 7890</a>
+                  <a href="tel:+1234567891" class="contact-link">+123 456 7891</a>
+                </div>
+              </div>
+      
+              <div class="info-card">
+                <ion-icon name="time-outline"></ion-icon>
+                <div>
+                  <h3>Check-in Time</h3>
+                  <p>Check-in: 2:00 PM</p>
+                  <p>Check-out: 11:00 AM</p>
+                </div>
+              </div>
+      
+              <div class="social-links">
+                <a href="https://wa.me/1234567890" class="social-link">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+                <a href="https://instagram.com/your_villa" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="mailto:info@yourvilla.com" class="social-link">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
     </article>
@@ -1256,7 +1658,7 @@
     - #FOOTER
   -->
 
-  <footer class="footer">
+  <!-- <footer class="footer">
 
     <div class="footer-top">
       <div class="container">
@@ -1442,10 +1844,92 @@
       </div>
     </div>
 
+  </footer> -->
+
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Brand Info -->
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <span class="logo-text">Pinakin</span>
+              <span class="logo-subtext">Prayaan</span>
+            </a>
+            <p class="footer-text">
+              Experience luxury living in the heart of Udaipur. Perfect for families, 
+              celebrations, and peaceful getaways.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <ion-icon name="location-outline"></ion-icon>
+                <address>Lake City, Udaipur, Rajasthan</address>
+              </li>
+              <li>
+                <ion-icon name="call-outline"></ion-icon>
+                <a href="tel:+1234567890">+123 456 7890</a>
+              </li>
+            </ul>
+          </div>
+  
+          <!-- Quick Links -->
+          <div class="footer-links">
+            <h3 class="h3 footer-title">Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#occasions">Occasions</a></li>
+              <li><a href="#amenities">Amenities</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+  
+          <!-- Services -->
+          <div class="footer-links">
+            <h3 class="h3 footer-title">Services</h3>
+            <ul>
+              <li><a href="#booking">Room Booking</a></li>
+              <li><a href="#occasions">Wedding Events</a></li>
+              <li><a href="#occasions">Birthday Parties</a></li>
+              <li><a href="#occasions">Corporate Events</a></li>
+            </ul>
+          </div>
+  
+          <!-- Connect -->
+          <div class="footer-connect">
+            <h3 class="h3 footer-title">Connect With Us</h3>
+            <ul class="social-list">
+              <li>
+                <a href="https://wa.me/1234567890" class="social-link">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com/your_villa" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@yourvilla.com" class="social-link">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2024 <a href="#">Your Villa Name</a>. All Rights Reserved
+        </p>
+      </div>
+    </div>
   </footer>
-
-
-
 
 
   <!-- 
